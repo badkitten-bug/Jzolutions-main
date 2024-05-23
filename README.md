@@ -1,7 +1,5 @@
 # 🚀 Jzolutions
 
-<img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/Jzolutions/lighthouse-score.png" align="right"
-     alt="Jzolutions Lighthouse Score" width="100" height="358">
 
 🌟 _Most *starred* & *forked* Astro theme in 2022 & 2023_. 🌟
 
