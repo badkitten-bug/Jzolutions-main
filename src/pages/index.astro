@@ -1,0 +1,401 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Jzolutions',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contáctanos',
+        href: 'https://wa.me/+51958236730',
+        target: '_blank',
+      },
+      { text: 'Ver más', href: '#features' },
+    ]}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'Jzolutions Hero Image' }}
+  >
+    <Fragment slot="title">
+      Bienvenido a
+      <span class="text-accent dark:text-green-500 highlight"> Jzolutions </span> : Transformando Ideas en Soluciones Digitales
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">Jzolutions,</span> tu socio experto en la creación de sistemas de gestión web personalizados.
+        Desde ODOO ERP hasta programas realizados desde cero y más allá, transformamos tus ideas en soluciones digitales
+        innovadoras y funcionales.</span
+      >
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Jzolutions: Production-ready.</span>
+      Ya sea que necesites una presencia en línea impresionante para tu negocio o una plataforma de comercio.
+    </Fragment>
+  </Hero>
+
+  <!-- Note Widget ******************* -->
+
+  <Note />
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    tagline="SERVICIOS DESTACADOS"
+    title="Descubre el potencial completo de Jzolutions"
+    subtitle="Expertos en ofrecerte soluciones integrales para tus necesidades digitales. Desde la implementación de sistemas CRM con ERP hasta la creación de páginas web dinámicas."
+    items={[
+      {
+        title: 'Implementación de CRM con ERP',
+        description:
+          'Potencia el rendimiento de tu empresa integrando sistemas CRM (Customer Relationship Management) o ERP (Enterprise Resource Planning). Optimiza la gestión de clientes, ventas, inventario y más, todo en una plataforma centralizada y eficiente.',
+        icon: 'tabler:brand-tailwind',
+      },
+      {
+        title: 'Integraciones Personalizadas',
+        description:
+          'Maximiza la funcionalidad de tus sistemas con integraciones personalizadas. Desde Odoo hasta PowerBI, creamos conexiones perfectas entre tus herramientas empresariales para mejorar la toma de decisiones y la eficiencia operativa.',
+        icon: 'tabler:components',
+      },
+      {
+        title: 'Automatización de Procesos de Negocios',
+        description:
+          'Simplifica tus operaciones y ahorra tiempo y recursos mediante la automatización de procesos de negocios. Desde la gestión de pedidos hasta la facturación, optimizamos tus flujos de trabajo para una mayor productividad y rentabilidad.',
+        icon: 'tabler:list-check',
+      },
+      {
+        title: 'Desarrollo de Software a Medida',
+        description:
+          'Transforma tus ideas en soluciones digitales con nuestro servicio de desarrollo de software a medida. Desde aplicaciones móviles hasta sistemas de gestión empresarial personalizados, creamos soluciones adaptadas a las necesidades únicas de tu empresa.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Diseño y Desarrollo Web Profesional',
+        description:
+          'Destaca en línea con páginas web profesionales y atractivas. Desde WordPress hasta Astro, creamos sitios web optimizados que reflejen la identidad de tu marca y proporcionen una experiencia excepcional a tus clientes.',
+        icon: 'tabler:arrows-right-left',
+      },
+      {
+        title: 'Consultoría Tecnológica Especializada',
+        description:
+          'Obtén asesoramiento experto para impulsar tu estrategia digital. Nuestro equipo de consultores te guiará en la implementación de soluciones tecnológicas innovadoras y efectivas para alcanzar tus objetivos comerciales.',
+        icon: 'tabler:bulb',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="PÁGINAS CON WORDPRESS"
+    title="El Modelo de Jzolutions: ¡La diversión se encuentra con la funcionalidad!"
+    items={[
+      {
+        title: 'Construímos páginas con WordPress 5.0',
+        description:
+          'Benefíciate del rendimiento y las características amigables para los desarrolladores de este popular sistema de gestión de contenido.',
+      },
+      {
+        title: 'Estilizado con CSS personalizado',
+        description:
+          'Facilitando el diseño rápido y el estilo consistente con código CSS personalizado, garantizando una apariencia única y profesional para tu sitio web.',
+      },
+      {
+        title: 'Compatibilidad con navegadores web',
+        description:
+          'Asegura que tu sitio web se vea y funcione de manera consistente en varios navegadores web, ofreciendo una experiencia sin interrupciones para todos los usuarios.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Construyendo sobre bases modernas
+      </h3>
+      Obtén una ventaja competitiva al incorporar prácticas líderes en la industria.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Alto nivel de personalización',
+        description: `Ajustamos la página fácilmente para que coincida con la identidad y los requisitos de tu marca, haciendo que tu sitio web sea único y ahorrándote tiempo.`,
+      },
+      {
+        title: 'Múltiples posibilidades de diseño',
+        description:
+          'Explora diversas opciones de diseño para encontrar la estructura que mejor presente tu contenido, mejorando la participación del usuario y la navegación.',
+      },
+      {
+        title: 'Diseño completamente receptivo',
+        description:
+          'Asegura el rendimiento óptimo de tu sitio web en varios dispositivos y tamaños de pantalla, brindando una experiencia consistente y agradable para el usuario.',
+      },
+      {
+        title: 'Integración de medios',
+        description:
+          'Incorpora de manera fluida imágenes, videos y elementos multimedia que mejoren tu contenido y atraigan a los visitantes de manera efectiva.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
+      alt: 'Blueprint Image',
+    }}
+  >
+    <Fragment slot="content">Garantiza que tu presencia en línea te represente verdaderamente.</Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent
+    items={[
+      {
+        title: 'Participación del usuario mejorada',
+        description:
+          'Capta a tu audiencia con elementos interactivos, navegación intuitiva y diseños visualmente atractivos, fomentando visitas más prolongadas.',
+      },
+      {
+        title: 'Mejora continua',
+        description:
+          'Asegura que tu sitio web se mantenga alineado con las últimas tendencias y tecnologías a través de actualizaciones y mejoras regulares.',
+      },
+      {
+        title: 'Eficiencia en tiempo y recursos',
+        description:
+          'Evita el proceso consumidor de tiempo de construir un sitio web desde cero y lanza tu presencia en línea más rápido con Jzolutions.',
+      },
+      {
+        title: 'Apoyo comunitario',
+        description: `Únete a la creciente comunidad de Jzolutions para obtener ideas, recursos y asistencia, asegurando que nunca estés solo en tu viaje de desarrollo web.`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Astronauts Image',
+    }}
+  >
+    <Fragment slot="content">Concebido para fomentar el crecimiento y el éxito.</Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="¡Haz realidad tu sitio web soñado en poco tiempo con Jzolutions!"
+    items={[
+      {
+        title: 'Paso 1: <span class="font-medium">Consulta</span>',
+        description:
+          'Ponte en contacto con nosotros y explícanos tu visión. Ya sea que tengas una idea clara o necesites orientación, estamos aquí para ayudarte a dar el primer paso. En solo una conversación, estableceremos las bases para tu proyecto.',
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Paso 2: <span class="font-medium">Creación de contenido</em>',
+        description:
+          'Vierte tu visión en el proyecto. Colaboraremos contigo para desarrollar el contenido que cuente tu historia de manera cautivadora. Ya sea texto, imágenes, multimedia o software, juntos daremos vida a tu idea.',
+        icon: 'tabler:letter-case',
+      },
+      {
+        title: 'Paso 3: <span class="font-medium">Personalización de estilos</span>',
+        description:
+          'Dale tu toque personal. Nuestro equipo de diseño trabajará contigo para personalizar colores, fuentes y diseños, garantizando que reflejen la identidad única de tu marca. Tu estilo único, potenciado por Jzolutions. La precisión en el diseño asegura una experiencia de usuario fluida.',
+        icon: 'tabler:paint',
+      },
+      {
+        title: '¡Listo!',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Steps image',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Widgets más utilizados"
+    subtitle="Ofrecemoss componentes frecuentemente utilizados para construir sitios web utilizando CSS personalizado."
+    tagline="Componentes"
+    items={[
+      {
+        title: 'Encabezados',
+        description:
+          '¿Alguna vez has intentado conducir sin GPS? ¡Boom! Por eso los sitios web necesitan encabezados para dar dirección.',
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Heros',
+        description:
+          'Imagina el aterrizaje de un superhéroe, ¡épico, verdad? Esa es la tarea de una sección de Héroe, ¡haciendo entradas grandiosas!',
+        icon: 'flat-color-icons:gallery',
+      },
+      {
+        title: 'Funcionalidades',
+        description:
+          'Donde los sitios web presumen sus cosas y muestran sus superpoderes. ¡Aquí no se retiene nada en cuanto a derechos de alardear!',
+        icon: 'flat-color-icons:approval',
+      },
+      {
+        title: 'Contenido',
+        description:
+          'Sumérgete en la carne y las papas de un sitio; sin él, solo estarías mirando escaparates. El contenido es el rey.',
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Llamada a la acción',
+        description:
+          '¡Ese amigo entusiasta que siempre está instando, "¡Hazlo! ¡Hazlo!"? Sí, ese es este botón que te empuja hacia la aventura.',
+        icon: 'flat-color-icons:advertising',
+      },
+      {
+        title: 'Precios',
+        description:
+          'Contempla el menú de postres del mundo de los sitios web. Opciones tentadoras esperan, ¿puedes resistir?',
+        icon: 'flat-color-icons:currency-exchange',
+      },
+      {
+        title: 'Testimonio',
+        description:
+          '¡Entra al rincón de chismes! Aquí, otros visitantes revelan secretos y comparten detalles jugosos.',
+        icon: 'flat-color-icons:voice-presentation',
+      },
+      {
+        title: 'Contacto',
+        description:
+          '¡Como un buzón digital, pero más rápido! Envía un mensaje, haz una pregunta o envía un alto virtual. ¡Ding! Mensaje entrante.',
+        icon: 'flat-color-icons:business-contact',
+      },
+      {
+        title: 'Pies de página',
+        description:
+          'El pie de página es como los créditos de una película pero salpicados con huevos de Pascua. ¡Es hora de buscar!',
+        icon: 'flat-color-icons:database',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <BlogLatestPosts
+    title="Descubre más contenidos en nuestro Blog"
+    information={`El blog se utiliza para mostrar la documentación de Jzolutions. Cada nuevo artículo será un paso importante que necesitarás saber para ser un experto en la creación de un sitio web usando Astro + Tailwind CSS. Astro es una tecnología muy interesante. Gracias.
+                `}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Preguntas frecuentes"
+    subtitle="Profundice en las siguientes preguntas para obtener información sobre las poderosas funciones que ofrece Jzolutions y cómo pueden mejorar su viaje de desarrollo web."
+    tagline="FAQs"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: '¿Qué diferencia a Jzolutions de otras empresas de software y desarrollo web?',
+        description:
+          'Nos destacamos por nuestra atención al cliente excepcional, nuestra experiencia técnica y nuestra capacidad para ofrecer soluciones personalizadas que generen un impacto real en tu negocio. Con Jzolutions, puedes esperar un enfoque colaborativo y orientado a resultados que te lleve al éxito en el mundo digital.',
+      },
+      {
+        title: '¿Cuáles son los servicios principales que ofrece Jzolutions?',
+        description:
+          'Explora nuestra amplia gama de servicios que incluyen desarrollo de software, integraciones de sistemas, automatización de procesos de negocios, diseño de páginas web y mucho más. Estamos aquí para proporcionarte las herramientas y la experiencia necesarias para llevar tu negocio al siguiente nivel en el mundo digital.',
+      },
+      {
+        title: '¿Cómo puedo contactar a Jzolutions en las redes sociales?',
+        description:
+          'Estamos disponibles en varias plataformas de redes sociales para mantenernos conectados contigo. Puedes encontrarnos en Facebook e Instagram. Además, no dudes en enviarnos un mensaje directo o necesitas ayuda. Estamos aquí para ti en cada paso del camino. ¡Esperamos conectarnos contigo pronto!',
+      },
+      {
+        title: '¿Ofrecen servicios de consultoría además del desarrollo digital?',
+        description:
+          'Sí, en Jzolutions ofrecemos servicios de consultoría personalizados para ayudarte a identificar las mejores estrategias digitales para tu negocio. Ya sea que necesites asesoramiento en la implementación de un CRM o en la optimización de tu presencia en línea, nuestro equipo de expertos está aquí para ayudarte.',
+      },
+      {
+        title: '¿Qué aspecto de mi sitio web puedo mejorar con Jzolutions?',
+        description:
+          'Estamos comprometidos a ayudarte a alcanzar la excelencia en línea. Siempre estamos buscando formas de mejorar y optimizar tu sitio web para garantizar una experiencia excepcional para tus usuarios. Desde el diseño hasta la funcionalidad, estamos aquí para ofrecerte soluciones y recomendaciones personalizadas para llevar tu sitio web al siguiente nivel.',
+      },
+      {
+        title: '¿Ofrecen servicios de soporte técnico y atención al cliente?',
+        description:
+          'Sí, en Jzolutions creemos en proporcionar un soporte técnico excepcional y una atención al cliente de primera clase. Ya sea que tengas preguntas sobre nuestros servicios o necesites ayuda con una solución específica, nuestro equipo está aquí para brindarte la asistencia que necesitas.',
+      },
+    ]}
+  />
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    stats={[
+      { title: 'EMPRESAS ATENDIDAS', amount: '10+' },
+      { title: 'CLIENTES REGULARES', amount: '30+' },
+      { title: 'USUARIOS SATISFECHOS', amount: '50+' },
+      { title: 'PROYECTOS PERSONALIZADOS', amount: '100+' },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contáctanos',
+        href: 'wa.me/+51958236730',
+        target: '_blank',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      WordPress&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">CSS personalizado</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Descubre la magia de las soluciones digitales integrales que ofrecemos en Jzolutions.¡Prepárate para sorprenderte
+      con las increíbles posibilidades que tenemos para ti!No pierdas más tiempo, ¡contáctanos hoy mismo! 😊
+    </Fragment>
+  </CallToAction>
+</Layout>
