@@ -115,7 +115,7 @@ export const headerData = {
       href: '#',
     }, */
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/Jzolutions', target: '_blank' }],
+  actions: [{ text: 'Download', href: 'https://github.com/badkitten-bug/Jzolutions-main', target: '_blank' }],
 };
 
 export const footerData = {
