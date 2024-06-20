@@ -37,7 +37,7 @@
 
 ## Demo
 
-📌 [https://Jzolutions.vercel.app/](https://Jzolutions.vercel.app/)
+📌 [https://www.jzolutions.com/](https://www.jzolutions.com/)
 
 <br>
 

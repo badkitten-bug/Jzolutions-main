@@ -3,7 +3,7 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Nuestros Servicios',
+      text: 'Servicios',
       links: [
         {
           text: 'SaaS',
@@ -46,20 +46,20 @@ export const headerData = {
           text: 'Contacto',
           href: getPermalink('/contact'),
         },
-        {
+        /* {
           text: 'Terminos y Condiciones',
           href: getPermalink('/terms'),
-        },
-        {
+        }, */
+        /* {
           text: 'Privacy policy',
           href: getPermalink('/privacy'),
-        },
+        }, */
       ],
     },
     {
-      text: 'Landing',
+      text: 'Demos',
       links: [
-        {
+        /* {
           text: 'Lead Generation',
           href: getPermalink('/landing/lead-generation'),
         },
@@ -82,10 +82,14 @@ export const headerData = {
         {
           text: 'Subscription',
           href: getPermalink('/landing/subscription'),
-        },
+        }, */
+        {
+          text: 'Software CRM ODOO',
+          href: getPermalink('/landing/lead-generation')
+        }
       ],
     },
-    {
+   /*  {
       text: 'Blog',
       links: [
         {
@@ -109,7 +113,7 @@ export const headerData = {
           href: getPermalink('astro', 'tag'),
         },
       ],
-    },
+    }, */
 /*  {
       text: 'Widgets',
       href: '#',
@@ -119,7 +123,7 @@ export const headerData = {
 };
 
 export const footerData = {
-  links: [
+  /* links: [
     {
       title: 'Product',
       links: [
@@ -164,20 +168,21 @@ export const footerData = {
         { text: 'Shop', href: '#' },
       ],
     },
-  ],
-  secondaryLinks: [
+  ], */
+  /* secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
-  ],
+  ], */
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
+    /* { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' }, */
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
+    /* { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' }, */
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/badkitten-bug' },
   ],
   footNote: `
-    🦎<img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://onwidget.com/favicon/favicon-32x32.png" alt="onWidget logo" loading="lazy"></img>
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://github.com/badkitten-bug"> Steve Gomez</a> · All rights reserved.
+    🦎Made by <a class="text-blue-600 underline dark:text-muted" href="https://github.com/badkitten-bug"> Steve Gomez</a> · All rights reserved.
   `,
 };
+
+/* <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://onwidget.com/favicon/favicon-32x32.png" alt="onWidget logo" loading="lazy"></img> */

@@ -1,6 +1,6 @@
 site:
   name: Jzolutions
-  site: 'https://Jzolutions.vercel.app'
+  site: 'https://www.jzolutions.com'
   base: '/'
   trailingSlash: false
 

@@ -8,7 +8,7 @@ tags:
   - tailwind css
   - theme
 metadata:
-  canonical: https://Jzolutions.vercel.app/how-to-customize-Jzolutions-to-your-brand
+  canonical: https://www.jzolutions.com/how-to-customize-Jzolutions-to-your-brand
 ---
 
 ## Congue justo vulputate nascetur convallis varius orci fringilla nulla pharetr
